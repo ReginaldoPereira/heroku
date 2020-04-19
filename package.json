@@ -17,7 +17,11 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "del": "^5.1.0",
     "express": "^4.16.2",
-    "mongoose": "^4.13.20"
+    "mogoose": "0.0.1-security",
+    "mongoose": "^5.9.9",
+    "multer": "^1.4.2",
+    "path": "^0.12.7"
   }
 }
