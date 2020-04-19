@@ -10,9 +10,9 @@ router.put('/users/:id', userCtrl.updateUser);
 
 module.exports.UPLOAD_PATH = 'uploads';
 
-var multer = require('multer'),
-upload = multer({ dest: module.exports.UPLOAD_PATH }),
-imageCtrl = require('./image-controller');
+var multer = require('multer');
+var upload = multer({ dest: module.exports.UPLOAD_PATH });
+var imageCtrl = require('./image-controller');
 
 router.post('/images', upload.single('image'), imageCtrl.uploadImage);
 router.get('/images', imageCtrl.getImages);
