@@ -5,8 +5,8 @@ express = require("express"),
 bodyParser = require("body-parser"),
 mongoose = require('mongoose');
 
-app.post('/users', userCtrl.createUser);
-app.delete('/users/:id', userCtrl.deleteUser);
+//app.post('/users', userCtrl.createUser);
+// app.delete('/users/:id', userCtrl.deleteUser);
 
 
 var app = express();
