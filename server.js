@@ -5,6 +5,10 @@ express = require("express"),
 bodyParser = require("body-parser"),
 mongoose = require('mongoose');
 
+app.post('/users', userCtrl.createUser);
+app.delete('/users/:id', userCtrl.deleteUser);
+
+
 var app = express();
 var port = process.env.PORT || 3000;
 var userCtrl = require('./user-controller');
